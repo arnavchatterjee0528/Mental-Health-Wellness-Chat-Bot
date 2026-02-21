@@ -1,0 +1,47 @@
+NODE overwhelmed -0.950 8.500
+TIP overwhelmed "Put your phone away and take 3 big slow breaths."
+TIP overwhelmed "Try: press your feet firmly into the ground for 30 seconds."
+TIP overwhelmed "4-7-8 breathing exercise: Breathe in for 4 seconds, hold breath for 7 seconds, exhale breath for 8 seconds"
+TIP overwhelmed "Step away from simulation. Avoid coffee and stimulants."
+TIP overwhelmed "calming music, comforting nature sounds"
+NODE anxious -0.700 7.000
+TIP anxious "5 slow breaths (inhale 4s, hold 2s, exhale 6s)."
+TIP anxious "Name 5 things you can see right now."
+NODE frustrated -0.600 6.000
+TIP frustrated "Step away for 2 minutes and stretch."
+TIP frustrated "Count backwards from 20 slowly."
+NODE angry -0.700 6.500
+TIP angry "Take a 60-second walk or do physical movement."
+TIP angry "Play games"
+NODE sad -0.800 6.000
+TIP sad "Write 3 small things that went okay today."
+TIP sad "Call or message someone you trust – say ‘I need a small favor’."
+NODE lonely -0.500 5.000
+TIP lonely "Try a brief message to a friend or online community."
+NODE grounded -0.100 3.000
+TIP grounded "Place an object in your hand and describe it slowly."
+NODE calm 0.600 3.000
+TIP calm "Listen to a favorite 3-minute song."
+NODE hopeful 0.700 2.500
+TIP hopeful "List one small goal for the next 24 hours."
+NODE happy 1.000 1.500
+TIP happy "Celebrate: do one small reward for yourself."
+NODE peaceful 0.900 1.500
+TIP peaceful "Try a 2-minute body scan relaxation."
+NODE anxiety -0.200 5.000
+TIP anxiety "5-4-3-2-1 anxiety method: See 5 things, feel 4 things, hear 3 sounds, smell 2 things, taste 1 thing"
+TIP anxiety "Move gently: A short walk, stretching, or shaking out your hands can release pent-up energy that anxiety creates."
+EDGE overwhelmed grounded 1.000 "5 grounding breaths & plant feet"
+EDGE anxious grounded 1.200 "5 slow breaths"
+EDGE anxious frustrated 1.800 ""
+EDGE anxious sad 1.700 ""
+EDGE frustrated calm 1.500 "count to 10 and stretch"
+EDGE frustrated angry 2.000 "step away and breathe"
+EDGE angry grounded 2.000 "walk for 2 minutes"
+EDGE sad hopeful 2.000 "write 3 small wins"
+EDGE sad calm 2.500 "sit with feelings and breathe"
+EDGE lonely hopeful 2.500 "reach out to one person"
+EDGE grounded calm 1.500 "stare at a wall"
+EDGE calm happy 1.500 "play a mood-lifting song"
+EDGE calm peaceful 1.000 "gentle stretching"
+EDGE hopeful happy 1.000 ""

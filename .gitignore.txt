@@ -1,0 +1,4 @@
+emo_tool
+emotion_data.txt
+*.exe
+*.o
