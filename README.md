@@ -1,32 +1,64 @@
-# Emotion Path Optimizer (Dijkstra-Based Emotional Guidance System)
+# 🧠 Mental Health Wellness Chat Bot
+### Dijkstra-Based Emotional State Optimization System (C Project)
 
-## Overview
-This project is a novel application of Dijkstra’s Shortest Path Algorithm
-to emotional state modeling.
+---
 
-Emotions are represented as nodes in a graph.
-Transitions between emotions are weighted edges.
-The algorithm computes the smoothest path from distress to positive states.
+## 📌 Overview
 
-## Features
-- Graph-based emotional modeling
-- Dijkstra shortest path implementation in C
-- Emotional realism (blocked unrealistic transitions)
-- Predefined coping strategies
-- User-defined tips & actions
-- Persistent save/load (emotion_data.txt)
+This project applies **Dijkstra’s Shortest Path Algorithm** to emotional state modeling.
 
-## How It Works
-Each emotional transition has a difficulty weight.
-The system adjusts weights using:
-- Presence of coping tips
-- Defined transition actions
-- Internal emotional bias
+Emotions are represented as nodes in a weighted graph, and transitions between emotions are represented as edges with difficulty values. The system computes the smoothest emotional path from a distress state to a positive state such as calm, hopeful, or happy.
 
-Dijkstra’s algorithm finds the lowest-cost emotional path.
+This project demonstrates how classical graph algorithms can be extended beyond traditional routing problems into abstract and assistive computational systems.
 
-## Compile & Run
+---
 
-```bash
-gcc -std=c99 -Wall -O2 emotion_final.c -o emo_tool
-./emo_tool
+## 🚀 Features
+
+- Graph-based emotional modeling  
+- Dijkstra’s shortest path algorithm implementation in C  
+- Realistic emotional transition constraints  
+- Predefined coping strategies  
+- User-defined emotional tips & actions  
+- Persistent save/load system  
+
+---
+
+## 💻 How to Run
+
+### 1️⃣ Clone the repository
+git clone https://github.com/arnavchatterjee0528/Mental-Health-Wellness-Chat-Bot.git
+cd Mental-Health-Wellness-Chat-Bot
+
+### 2️⃣ Compile the program
+gcc emotion_final.c -o emo_tool
+### 3️⃣ Run the program
+
+Windows:emo_tool
+Mac/Linux:./emo_tool
+---
+
+## 📂 Project Structure
+emotion_final.c
+README.md
+.gitignore
+emotion_data.txt (auto-generated after running)
+
+
+---
+
+## 🧠 How It Works
+
+1. Emotions are treated like locations on a map.
+2. Each transition has a difficulty value.
+3. Coping strategies reduce transition difficulty.
+4. Dijkstra’s algorithm finds the easiest emotional route.
+5. Unrealistic transitions are restricted for realism.
+
+---
+
+## 👨‍💻 Author
+
+Arnav Chatterjee  
+B.Tech Computer Science  
+2026
